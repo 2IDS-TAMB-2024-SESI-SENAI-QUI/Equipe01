@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Breaking Bonds</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link type="text/script" href="script.js">
+	    <script src="https://kit.fontawesome.com/b916edb840.js" crossorigin="anonymous"></script>
+        <script>
+            function ApareceTextoLigacaoSimples(){
+                if(document.getElementById("texto-lig-simples").style.display == "none" &&
+                    document.getElementById("containerC").style.display == "none"){
+                    document.getElementById("texto-lig-simples").style.display = "block";
+                    document.getElementById("containerC").style.display = "block";
+                }
+                else{
+                    document.getElementById("texto-lig-simples").style.display = "none";
+                    document.getElementById("containerC").style.display = "none";
+                }
+            }
+            function ApareceTextoLigacaoDupla(){
+                if(document.getElementById("texto-lig-dupla").style.display == "none"){
+                    document.getElementById("texto-lig-dupla").style.display = "block";
+                }
+                else{
+                    document.getElementById("texto-lig-dupla").style.display = "none";
+                }
+            }
+            function ApareceTextoLigacaoTripla(){
+                if(document.getElementById("texto-lig-tripla").style.display == "none"){
+                    document.getElementById("texto-lig-tripla").style.display = "block";
+                }
+                else{
+                    document.getElementById("texto-lig-tripla").style.display = "none";
+                }
+            }
+            function ApareceTextoAciclica(){
+                if(document.getElementById("texto-aciclica").style.display == "none"){
+                    document.getElementById("texto-aciclica").style.display = "block";
+                }
+                else{
+                    document.getElementById("texto-aciclica").style.display = "none";
+                }
+            }
+        </script>
+
+    </head>
+
+    <body>
+        <body>
+
+        <div class="img">
+            <header>
+                <!-- <div class="top-bar">
+                    <a href="#">GET Tickets</a> | <a href="#">Shop</a> |
+                    <span>Live</span> | <a href="#">Sign up / Sign in</a>
+                </div> -->
+                <nav>
+                    <ul>
+                        <div class="menu">
+                            <li><a href="#">Início</a></li>
+                            <li><a href="#">Sobre Nós</a></li>
+                            <li><a href="#">Contato</a></li>
+
+                        </div>
+
+                        <img src="logo1.png" alt="" class="logo">
+
+                        <div class="menu">
+                            <li><a href="#">Cadeia</a></li>
+                            <li><a href="#">Elementos</a></li>
+                            <li><a href="#">Montagem</a></li>
+
+                        </div>
+                    </ul>
+                </nav>
+            </header>
+            <div class="divisao"></div>
+
+            <main>
+                <section class="countdown">
+
+                </section>
+                    <div class="cadeia">
+
+                        <div class="ca um">
+
+                            <div class="brilho">
+                                <div class="quimica">
+                                    <span>Q</span>
+                                    <span>U</span>
+                                    <span>Í</span>
+                                    <span>M</span>
+                                    <span>I</span>
+                                    <span>C</span>
+                                    <span>A</span>
+                                </div>
+
+                                <div class="organicas">
+                                    <span>O</span>
+                                    <span>R</span>
+                                    <span>G</span>
+                                    <span>Â</span>
+                                    <span>N</span>
+                                    <span>I</span>
+                                    <span>C</span>
+                                    <span>A</span>
+                                </div>
+                            </div>
+
+                            <p>Química orgânica é o ramo da química que estuda os compostos baseados no elemento carbono. Originalmente, era definida como a química das substâncias encontradas nos seres vivos, mas hoje sabemos que compostos orgânicos podem ser sintetizados artificialmente também.
+                                <br>
+                                <br>
+                                O carbono é especial porque tem a capacidade de formar quatro ligações covalentes estáveis com outros átomos, incluindo outros carbonos, o que permite a formação de estruturas complexas, como cadeias e anéis.
+                                Essas estruturas podem conter átomos de hidrogênio, oxigênio, nitrogênio, enxofre, fósforo e outros.
+                                <br>
+                                <hr style="color: gray;">
+                                <br>
+                                <p style="margin-top: -5px; margin-bottom: -5px;"> As cadeias carbônicas são formadas por ligações covalentes, onde os átomos compartilham pares de elétrons. No caso de cadeias carbônicas, podem ocorrer: </p>
+                                <br>
+                                <br>
+                                <button class="ligacao" onclick="ApareceTextoLigacaoSimples();"><i class="fa-solid fa-circle-arrow-down" style="color: #2ecc65; margin-right: 10px; margin-left: 10px;"></i> Ligações simples:</button>
+                                <p id="texto-lig-simples">Em uma ligação simples, cada átomo contribui com um elétron para formar um par compartilhado. Isso resulta em uma atração mútua entre os núcleos atômicos e os elétrons compartilhados.
+                                <br> <br>
+                                As ligações simples são mais fracas do que ligações duplas e triplas, mas ainda são suficientemente fortes para manter os átomos unidos. O comprimento da ligação simples é maior em comparação com ligações múltiplas, pois a presença de mais elétrons em ligações múltiplas puxa os átomos mais próximos.
+                                Em ligações simples, os átomos podem rotacionar livremente ao redor da ligação, o que não ocorre em ligações duplas ou triplas devido à rigidez dessas ligações.
+                                <br>
+                                <br>
+                                <i class="fa-solid fa-arrow-right" style="margin-right: 10px; color: rgb(203, 203, 203);"></i><b>Exemplo:</b> Molécula de Metano (CH₄):
+                                <br>
+                                O carbono forma quatro ligações simples com quatro átomos de hidrogênio:
+                                <br>
+                                </p>
+
+                                <div id="containerC"  class="molecule">
+                                    <img src="" alt="">
+                                </div>
+
+                                <br>
+                                <button class="ligacao" onclick="ApareceTextoLigacaoDupla();"><i class="fa-solid fa-circle-arrow-down" style="color: #2ecc65; margin-right: 10px; margin-left: 10px;"></i> Ligações dupla:</button>
+                                <p id="texto-lig-dupla">A ligação dupla ocorre quando dois pares de elétrons são compartilhados entre dois átomos. Esse tipo de ligação é mais forte e mais curta que uma ligação simples, devido ao maior número de elétrons envolvidos na interação.
+                                    <br><br>
+                                    As ligações duplas são mais fortes do que as ligações simples, mas não tão fortes quanto as ligações triplas.
+                                    Substâncias com ligações duplas tendem a ser mais reativas, especialmente em reações de adição.
+                                    <br><br>
+                                    <i class="fa-solid fa-arrow-right" style="margin-right: 10px; color: rgb(203, 203, 203);"></i><b>Exemplo:</b> Dióxido de carbono (CO₂):
+                                    <br>
+                                    Cada átomo de oxigênio forma uma ligação dupla com o carbono:
+                                </p>
+
+                                <div id="containerC"  class="molecule">
+                                    <img src="" alt="">
+                                </div>
+
+                                <br>
+                                <button class="ligacao" onclick="ApareceTextoLigacaoTripla();"><i class="fa-solid fa-circle-arrow-down" style="color: #2ecc65; margin-right: 10px; margin-left: 10px;"></i> Ligações tripla:</button>
+                                <p id="texto-lig-tripla">A ligação tripla ocorre quando três pares de elétrons são compartilhados entre dois átomos. Esse tipo de ligação é ainda mais forte e mais curta do que a ligação dupla, proporcionando uma conexão muito forte entre os átomos.
+                                    Embora sejam muito fortes, ligações triplas também podem ser reativas, especialmente em condições específicas, como em reações de adição.
+                                    <br><br>
+                                    <i class="fa-solid fa-arrow-right" style="margin-right: 10px; color: rgb(203, 203, 203);"></i><b>Exemplo:</b> Molécula de propino (C3H4):
+                                    <br>
+                                    Ocorre uma ligação tripla entre dois carbonos:
+                                </p>
+
+                                <div id="containerC"  class="molecule">
+                                    <img src="" alt="">
+                                </div>
+                            </p>
+
+                        </div>
+
+                        <div class="ca dois">
+                            <br>
+                            <p> As Cadeias Carbônicas se dividem também entre <a style="color: #2ecc65;">Aberta</a> e <a style="color: #2ecc65;">Fechada.</a></p>
+                                <button class="ligacao" onclick="ApareceTextoAciclica();"><i class="fa-solid fa-circle-arrow-down" style="color: #2ecc65; margin-right: 10px; margin-left: 10px;"></i> Cadeia Aberta (Acíclica)</button>
+                                <p id="texto-aciclica"> Uma cadeia é considerada Aberta ou Acíclica quando os átomos de carbono formam uma estrutura linear ou ramificada, mas não fechada.
+                                    <br> <br>
+                                    As extremidades da cadeia estão livres, ou seja, não há um ciclo formado. Essas cadeias podem ser saturadas (apenas ligações simples entre os carbonos) ou insaturadas (com uma ou mais ligações duplas ou triplas).
+                                    <br><br>
+                                    <i class="fa-solid fa-arrow-right" style="margin-right: 10px; color: rgb(203, 203, 203);"></i><b>Exemplo:</b> Molécula de Butano (C₄H₁₀):
+                                    <br>
+                                    é uma cadeia aberta, com quatro átomos de carbono em sequência:
+                                </p>
+
+                                <div id="containerC"  class="molecule">
+                                    <img src="" alt="">
+                                </div>
+
+                                <br>
+
+                                <button class="ligacao" onclick="ApareceTextoAciclica();"><i class="fa-solid fa-circle-arrow-down" style="color: #2ecc65; margin-right: 10px; margin-left: 10px;"></i> Cadeia Fechada (Cíclica)</button>
+                                <p id="texto-aciclica"> Uma cadeia é considerada Aberta ou Acíclica quando os átomos de carbono formam uma estrutura linear ou ramificada, mas não fechada.
+                                    <br> <br>
+                                    As extremidades da cadeia estão livres, ou seja, não há um ciclo formado. Essas cadeias podem ser saturadas (apenas ligações simples entre os carbonos) ou insaturadas (com uma ou mais ligações duplas ou triplas).
+                                    <br><br>
+                                    <i class="fa-solid fa-arrow-right" style="margin-right: 10px; color: rgb(203, 203, 203);"></i><b>Exemplo:</b> Molécula de Butano (C₄H₁₀):
+                                    <br>
+                                    é uma cadeia aberta, com quatro átomos de carbono em sequência:
+                                </p>
+
+                                <div id="containerC"  class="molecule">
+                                    <img src="" alt="">
+                                </div>
+
+                                <br>
+                                <hr>
+
+
+                                <p>Depenedo doa tipos de ligações presentes numa cadeia, ela pode ser classificada em <a style="color: #2ecc65;">Saturada</a> ou <a style="color: #2ecc65;">Insaturada.</a></p>
+                                <button class="ligacao" onclick="ApareceTextoAciclica();"><i class="fa-solid fa-circle-arrow-down" style="color: #2ecc65; margin-right: 10px; margin-left: 10px;"></i> Cadeia Saturada</button>
+                                <p id="texto-aciclica"> Uma cadeia é considerada Aberta ou Acíclica quando os átomos de carbono formam uma estrutura linear ou ramificada, mas não fechada.
+                                    <br> <br>
+                                    As extremidades da cadeia estão livres, ou seja, não há um ciclo formado. Essas cadeias podem ser saturadas (apenas ligações simples entre os carbonos) ou insaturadas (com uma ou mais ligações duplas ou triplas).
+                                    <br><br>
+                                    <i class="fa-solid fa-arrow-right" style="margin-right: 10px; color: rgb(203, 203, 203);"></i><b>Exemplo:</b> Molécula de Butano (C₄H₁₀):
+                                    <br>
+                                    é uma cadeia aberta, com quatro átomos de carbono em sequência:
+                                </p>
+
+                                <div id="containerC"  class="molecule">
+                                    <img src="" alt="">
+                                </div>
+                                <br>
+
+                                <button class="ligacao" onclick="ApareceTextoAciclica();"><i class="fa-solid fa-circle-arrow-down" style="color: #2ecc65; margin-right: 10px; margin-left: 10px;"></i> Cadeia Insaturada</button>
+                                <p id="texto-aciclica"> Uma cadeia é considerada Aberta ou Acíclica quando os átomos de carbono formam uma estrutura linear ou ramificada, mas não fechada.
+                                    <br> <br>
+                                    As extremidades da cadeia estão livres, ou seja, não há um ciclo formado. Essas cadeias podem ser saturadas (apenas ligações simples entre os carbonos) ou insaturadas (com uma ou mais ligações duplas ou triplas).
+                                    <br><br>
+                                    <i class="fa-solid fa-arrow-right" style="margin-right: 10px; color: rgb(203, 203, 203);"></i><b>Exemplo:</b> Molécula de Butano (C₄H₁₀):
+                                    <br>
+                                    é uma cadeia aberta, com quatro átomos de carbono em sequência:
+                                </p>
+
+                                <div id="containerC"  class="molecule">
+                                    <img src="" alt="">
+                                </div>
+                                <br>
+                                <hr>
+                                <p> Vale lembrar ainda que uma cadeia é <a style="color: #2ecc65;">homogênea</a> quando todos os átomos presentes entre os carbonos são também carbonos, ou seja, não há a presença de átomos de outros elementos no meio da cadeia. Já a cadeia <a style="color: #2ecc65;">heterogênea</a> contém átomos diferentes de carbono no seu esqueleto, como oxigênio, nitrogênio ou enxofre, sendo esses átomos chamados de <a style="color: #2ecc65;">heteroátomos.</a></p>
+
+                        </div>
+
+                    </div>
+                </section>
+
+
+
+
+                <section class="tabela">
+                    <p class="nomenclatura">NOMENCLATURA</p>
+                <div class="tab">
+                <table style="background: black;">
+                    <thead>
+                        <tr>
+                            <th>Prefixo</th>
+                            <!-- <th>Infixo</th>
+                            <th>Sufixo</th> -->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1 C - MET</td>
+                            <!-- <td rowspan="2">AN – Ligação Simples</td>
+                            <td rowspan="10">O</td> -->
+                        </tr>
+                        <tr>
+                            <td>2 C - ET</td>
+                        </tr>
+                        <tr>
+                            <td>3 C - PROP</td>
+                            <!-- <td rowspan="2">EN – Ligação dupla</td> -->
+                        </tr>
+                        <tr>
+                            <td>4 C - BUT</td>
+                        </tr>
+                        <tr>
+                            <td>5 C - PENT</td>
+                            <!-- <td rowspan="2">IN – Ligação tripla</td> -->
+                        </tr>
+                        <tr>
+                            <td>6 C - HEX</td>
+                        </tr>
+                        <tr>
+                            <td>7 C - HEPT</td>
+                            <!-- <td rowspan="2">DIEN – Duas ligações duplas</td> -->
+                        </tr>
+                        <tr>
+                            <td>8 C - OCT</td>
+                        </tr>
+                        <tr>
+                            <td>9 C - NON</td>
+                            <!-- <td rowspan="2">DIIN – Duas ligações triplas</td> -->
+                        </tr>
+                        <tr>
+                            <td>10 C - DEC</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table style="background: black;">
+                    <thead>
+                        <tr>
+                            <!-- <th>Prefixo</th> -->
+                            <th>Infixo</th>
+                            <!-- <th>Sufixo</th>  -->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <!-- <td>1 C - MET</td> -->
+                            <td rowspan="2">AN – Ligação Simples</td>
+                            <!-- <td rowspan="10">O</td>  -->
+                        </tr>
+                        <tr>
+                            <!-- <td>2 C - ET</td> -->
+                        </tr>
+                        <tr>
+                            <!-- <td>3 C - PROP</td> -->
+                            <td rowspan="2">EN – Ligação dupla</td>
+                        </tr>
+                        <tr>
+                            <!-- <td>4 C - BUT</td> -->
+                        </tr>
+                        <tr>
+                            <!-- <td>5 C - PENT</td> -->
+                            <td rowspan="2">IN – Ligação tripla</td>
+                        </tr>
+                        <tr>
+                            <!-- <td>6 C - HEX</td> -->
+                        </tr>
+                        <tr>
+                            <!-- <td>7 C - HEPT</td> -->
+                            <td rowspan="2">DIEN – Duas ligações duplas</td>
+                        </tr>
+                        <tr>
+                            <!-- <td>8 C - OCT</td> -->
+                        </tr>
+                        <tr>
+                            <!-- <td>9 C - NON</td> -->
+                            <td rowspan="2">DIIN – Duas ligações triplas</td>
+                        </tr>
+                        <tr>
+                            <!-- <td>10 C - DEC</td> -->
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table style="background: black;">
+                    <thead>
+                        <tr>
+                            <!-- <th>Prefixo</th> -->
+                            <!-- <th>Infixo</th> -->
+                            <th>Sufixo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <!-- <td>1 C - MET</td> -->
+                            <!-- <td rowspan="2">AN – Ligação Simples</td> -->
+                            <td rowspan="10">O</td>
+                        </tr>
+                        <tr>
+                            <!-- <td>2 C - ET</td> -->
+                        </tr>
+                        <tr>
+                            <!-- <td>3 C - PROP</td> -->
+                            <!-- <td rowspan="2">EN – Ligação dupla</td> -->
+                        </tr>
+                        <tr>
+                            <!-- <td>4 C - BUT</td> -->
+                        </tr>
+                        <tr>
+                            <!-- <td>5 C - PENT</td> -->
+                            <!-- <td rowspan="2">IN – Ligação tripla</td> -->
+                        </tr>
+                        <tr>
+                            <!-- <td>6 C - HEX</td> -->
+                        </tr>
+                        <tr>
+                            <!-- <td>7 C - HEPT</td> -->
+                            <!-- <td rowspan="2">DIEN – Duas ligações duplas</td> -->
+                        </tr>
+                        <tr>
+                            <!-- <td>8 C - OCT</td> -->
+                        </tr>
+                        <tr>
+                            <!-- <td>9 C - NON</td> -->
+                            <!-- <td rowspan="2">DIIN – Duas ligações triplas</td> -->
+                        </tr>
+                        <tr>
+                            <!-- <td>10 C - DEC</td> -->
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <br>
+
+                </div>
+                </section>
+
+                <!-- <section style="width: 100%;">
+                    <img src="periodica.png" alt="" style="width: 100%;">
+                </section> -->
+
+            </main>
+        </div>
+        </body>
+        </html>
+    </body>
+</html>
